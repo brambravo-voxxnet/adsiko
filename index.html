@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Adsiko - Digital advertising agency specialized in empowering online media with smart ad solutions, audience growth, and revenue optimization." />
+  <title>Adsiko — Digital Advertising Agency for Online Media</title>
+  <style>
+    :root{
+      --bg:#0f1724; --card:#0b1220; --accent:#06b6d4; --muted:#94a3b8; --glass: rgba(255,255,255,0.03);
+      --maxw:1100px; --radius:14px; --gap:22px;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;background:linear-gradient(180deg,#071025 0%, #07162b 100%);color:#e6eef6;line-height:1.55}
+    .container{max-width:var(--maxw);margin:40px auto;padding:24px}
+    header{display:flex;align-items:center;justify-content:space-between;gap:12px}
+    .brand{display:flex;align-items:center;gap:12px}
+    .logo{width:56px;height:56px;border-radius:12px;background:linear-gradient(135deg,var(--accent),#7c3aed);display:flex;align-items:center;justify-content:center;font-weight:700;color:#04263a}
+    h1{font-size:26px;margin:0}
+    p.lead{color:var(--muted);margin:6px 0 0}
+    nav a{color:var(--muted);text-decoration:none;margin-left:18px}
+
+    .hero{display:grid;grid-template-columns:1fr 420px;gap:var(--gap);align-items:center;margin-top:28px}
+    .card{background:var(--card);border-radius:var(--radius);padding:22px;box-shadow:0 6px 24px rgba(3,7,18,0.6)}
+    .hero-left h2{font-size:30px;margin:0 0 12px}
+    .cta{display:inline-block;background:var(--accent);color:#04263a;padding:10px 16px;border-radius:10px;font-weight:600;text-decoration:none}
+    ul.bullets{padding-left:18px;margin:12px 0 0;color:var(--muted)}
+
+    .services{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin:28px 0}
+    .service{padding:18px;border-radius:12px;background:linear-gradient(180deg,var(--glass),transparent);border:1px solid rgba(255,255,255,0.03)}
+    .service h3{margin:0 0 8px}
+    .muted{color:var(--muted);font-size:14px}
+
+    .portfolio{margin:28px 0;display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+    .port-item{background:linear-gradient(180deg, rgba(255,255,255,0.02), transparent);padding:14px;border-radius:12px}
+
+    .about{display:flex;gap:20px;align-items:flex-start;margin:28px 0}
+    .team{display:flex;gap:10px}
+    .member{background:var(--glass);padding:10px;border-radius:12px;width:140px;text-align:center}
+
+    footer{margin:36px 0 80px;color:var(--muted)}
+
+    form input, form textarea{width:100%;padding:10px;border-radius:10px;border:1px solid rgba(255,255,255,0.04);background:transparent;color:inherit}
+    .grid-2{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+
+    @media (max-width:980px){
+      .hero{grid-template-columns:1fr;}
+      .services{grid-template-columns:1fr}
+      .portfolio{grid-template-columns:1fr}
+      .grid-2{grid-template-columns:1fr}
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div class="logo" aria-hidden>AD</div>
+        <div>
+          <h1>Adsiko</h1>
+          <p class="lead">Advertising agency for online media — audience-first, revenue-smart.</p>
+        </div>
+      </div>
+      <nav aria-label="Main navigation">
+        <a href="#services">Services</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div class="hero-left">
+        <div class="card">
+          <h2>We help online media grow audience & revenue — without the overwhelm.</h2>
+          <p class="muted">Adsiko partners with publishers, local newsrooms, and niche content platforms to create tailored ad strategies, boost ad revenue, and build loyal audiences. We combine product thinking, ad ops, and editorial respect.</p>
+
+          <ul class="bullets">
+            <li>Programmatic & direct ad operations</li>
+            <li>Audience development & native storytelling</li>
+            <li>Monetization consulting and training</li>
+          </ul>
+
+          <div style="margin-top:16px">
+            <a class="cta" href="#contact">Get a free audit</a>
+            <a style="margin-left:12px;color:var(--muted);text-decoration:none" href="#portfolio">See our work »</a>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <div class="card">
+          <h3 style="margin-top:0">Why publishers choose Adsiko</h3>
+          <p class="muted">Focus on journalism — we handle the rest.</p>
+          <div style="margin-top:10px">
+            <strong>Transparent revenue split</strong>
+            <p class="muted">Clear reporting and predictable payouts every month.</p>
+            <strong>Low technical friction</strong>
+            <p class="muted">Ad stacks that integrate with common CMS and are easy to manage.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="services">
+      <h2 style="margin-bottom:12px">Services</h2>
+      <div class="services">
+        <div class="service card">
+          <h3>Ad Operations & Yield Management</h3>
+          <p class="muted">Set up programmatic, header bidding, direct deals, and optimize yield across channels to increase CPMs while preserving user experience.</p>
+        </div>
+        <div class="service card">
+          <h3>Audience Growth</h3>
+          <p class="muted">SEO, social distribution, newsletter strategies, and on-site personalization to grow engaged readers who convert to loyal audiences.</p>
+        </div>
+        <div class="service card">
+          <h3>Content & Native Campaigns</h3>
+          <p class="muted">Create branded content and native advertising that resonates with readers and performs for advertisers.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="portfolio">
+      <h2 style="margin-bottom:12px">Selected Work</h2>
+      <div class="portfolio">
+        <div class="port-item">
+          <h4>Regional News Network — Yield uplift</h4>
+          <p class="muted">Implemented header bidding and restructured direct deals; 35% increase in ad revenue within 3 months.</p>
+        </div>
+        <div class="port-item">
+          <h4>Lifestyle Vertical — Native campaigns</h4>
+          <p class="muted">Produced a branded series that improved reader time-on-page and delivered measurable conversions for advertisers.</p>
+        </div>
+        <div class="port-item">
+          <h4>Niche Tech Blog — Audience growth</h4>
+          <p class="muted">SEO-led content plan and newsletter relaunch that doubled organic traffic in 6 months.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="about">
+      <div style="flex:1">
+        <h2>About Adsiko</h2>
+        <p class="muted">Founded by industry veterans in ad tech and editorial product, Adsiko believes publishers should control their destiny. We build sustainable monetization strategies that respect editorial independence and user experience.</p>
+
+        <h3 style="margin-top:16px">Client sectors</h3>
+        <p class="muted">Local & regional newsrooms, niche vertical publishers, independent blogs, and non-profit media initiatives.</p>
+      </div>
+      <aside style="width:260px">
+        <h3>Our team</h3>
+        <div class="team">
+          <div class="member">
+            <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='80' height='80'><rect width='100%' height='100%' fill='%2306b6d4'/></svg>" alt="Avatar" style="width:80px;height:80px;border-radius:12px;display:block;margin:0 auto 8px" />
+            <strong>Rina</strong>
+            <div class="muted">Head of Strategy</div>
+          </div>
+          <div class="member">
+            <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='80' height='80'><rect width='100%' height='100%' fill='%237c3aed'/></svg>" alt="Avatar" style="width:80px;height:80px;border-radius:12px;display:block;margin:0 auto 8px" />
+            <strong>Danu</strong>
+            <div class="muted">Ad Ops Lead</div>
+          </div>
+        </div>
+      </aside>
+    </section>
+
+    <section id="contact" class="card" style="margin-top:22px">
+      <h2 style="margin-top:0">Let's talk</h2>
+      <p class="muted">Book a free revenue audit or ask how we can tailor a plan for your newsroom.</p>
+
+      <form action="#" method="post" style="margin-top:12px">
+        <div class="grid-2">
+          <input type="text" name="name" placeholder="Name" required />
+          <input type="email" name="email" placeholder="Email" required />
+        </div>
+        <div style="margin-top:12px">
+          <input type="text" name="publication" placeholder="Publication / Website" />
+        </div>
+        <div style="margin-top:12px">
+          <textarea name="message" rows="4" placeholder="Tell us about your goals or challenges"></textarea>
+        </div>
+        <div style="margin-top:12px;display:flex;gap:12px;align-items:center">
+          <button type="submit" class="cta">Request audit</button>
+          <div class="muted">Or email us at <strong>hello@adsiko.example</strong></div>
+        </div>
+      </form>
+    </section>
+
+    <footer>
+      <div style="display:flex;justify-content:space-between;align-items:center">
+        <div>
+          <strong>Adsiko</strong>
+          <div class="muted">Advertising agency for online media — Jakarta & remote</div>
+        </div>
+        <div class="muted">© Adsiko — All rights reserved</div>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
